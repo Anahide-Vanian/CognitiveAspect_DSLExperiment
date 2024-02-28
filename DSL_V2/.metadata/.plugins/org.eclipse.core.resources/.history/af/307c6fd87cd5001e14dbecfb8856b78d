@@ -1,0 +1,182 @@
+#from behave import fixture
+import json
+from behave.model import Scenario
+#Libraries linked with Arduino 
+import sys, time
+import random
+import serial
+import io
+
+f = open("Environment.json")
+data = json.load(f)
+
+
+        
+def before_all(context):
+    print("Setting up Environment...")
+    # Send setup command to Arduino
+    
+    context.serial_port = "COM9"
+
+    context.curSerial = serial.Serial(context.serial_port, 115200, timeout=1)
+    
+    #discarding the first data waiting to be read.
+    time.sleep(10)
+    context.curSerial.flushInput()
+    
+    #object and magnet value
+    setJsonMagnetValue(context, "None")  
+    setJsonColorValue(context, "None") 
+    
+    #motor speeds
+    context.speed1 = 500
+    context.speed2 = 100
+    context.speed3 = 300
+    context.speed4 = 100
+    
+
+def before_feature(context, feature): 
+    
+    #motor psoitions
+    context.lastpos1 
+    context.lastpos2 
+    context.lastpos3 
+    context.lastpos4 
+    #pass
+
+def after_feature(context, feature):
+    pass
+
+def before_scenario(context, scenario): 
+    pass
+
+def after_scenario(context, scenario):
+    pass
+
+def after_step(context, scenario):
+    pass
+
+
+def askArduinoMotorValues(context, motor_id):
+    # Construct the JSON command with proper formatting
+    command = {"cmd": "getServoPos", "id": motor_id}
+    json_string = json.dumps(command) # Serialize into JSON string
+    # Write the JSON command to the serial port
+    writeText2SerialPort(context, json_string, 0)
+    #time.sleep(2)
+    
+    # Read the response from the serial port
+    response_dict = readTextFromSerialPort(context)
+    
+    try:       
+        # Extract the "value" from the response
+        motor_value = response_dict.get("value")
+        return motor_value
+    
+    except json.decoder.JSONDecodeError as e:
+        # Handle JSON decoding error
+        print("Error decoding JSON:", e)
+        return None
+    
+    
+def askArduinoRelayValue(context):
+    # Construct the JSON command with proper formatting
+    command = {"cmd": "getRelayValue"}
+    json_string = json.dumps(command) # Serialize into JSON string
+    # Write the JSON command to the serial port
+    writeText2SerialPort(context, json_string, 0)
+    
+    # Read the response from the serial port
+    response_dict = readTextFromSerialPort(context)
+    
+    try:
+        relay_value = response_dict.get("value")
+        return relay_value
+    
+    except json.decoder.JSONDecodeError as e:
+        # Handle JSON decoding error
+        print("Error decoding JSON:", e)
+        return None
+    
+    
+    
+    
+def askArduinoColorValues(context):
+    # Construct the JSON command with proper formatting
+    command = {"cmd": "getColor"}
+    json_string = json.dumps(command) # Serialize into JSON string
+    
+    # Write the JSON command to the serial port
+    writeText2SerialPort(context, json_string, 0)
+    
+    # Read the response from the serial port
+    response_dict = readTextFromSerialPort(context)
+    
+    # Extract the "value" from the response
+    r_value = response_dict.get("r")
+    g_value = response_dict.get("g")
+    b_value = response_dict.get("b")
+    return (r_value, g_value, b_value)
+    
+    
+
+def position2MotorValues(name):
+    locations = data["Positions"]
+    coordinate = locations[name]
+
+    return coordinate
+
+def setJsonColorValue(context, color_value):
+    
+    #modify data
+    data["Object"]["color"] = color_value
+    time.sleep(1)
+    
+    
+def setJsonMagnetValue(context, magnet_value):
+    
+    #modify data
+    data["Robot"]["magnet"] = magnet_value
+    time.sleep(1)
+    
+
+def readJsonColorValue(context):
+    
+    value = data["Object"]["color"]
+    #time.sleep(1)
+    return value
+
+def readJsonMagnetValue(context):
+    value = data["Robot"]["magnet"]
+    #time.sleep(1)
+    return value
+    
+
+def writeText2SerialPort(context, text, time_delay):
+ 
+    context.curSerial.write(text.encode())
+    time.sleep(time_delay)
+    
+def readTextFromSerialPort(context):
+ 
+
+    while True:
+        # Read a line from the serial port
+        line = context.curSerial.readline().decode().strip()
+        
+        # Check if the line is not empty
+        if line:
+            # Print the received data
+            #print('Received from Arduino:', line)
+            parsed_json = json.loads(line)#transforms strings to dictionary
+            
+            if(parsed_json.get("cmd") == "debug" or parsed_json.get("value") == -1):
+                continue 
+            else:
+                return parsed_json
+
+    
+
+
+
+

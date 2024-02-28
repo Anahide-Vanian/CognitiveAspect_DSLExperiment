@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="write"/>
+		<item key="wrap" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="write"/>
+			<item value="sensed"/>
+			<item value="time.sleep(1)"/>
+			<item value="askArduino"/>
+			<item value="grabbed"/>
+			<item value="#time.sleep"/>
+			<item value="#time.sleep(2)"/>
+			<item value=" env.writeText2SerialPort(context, text2, 1)"/>
+			<item value="env.writeText2SerialPort(context, text, 1)"/>
+			<item value="env.writeText2SerialPort(context, text, 0.5)"/>
+			<item value="env.writeText2SerialPort(context, text, 0)"/>
+			<item value="print"/>
+			<item value="env.env.lastpos"/>
+			<item value="lastpos4"/>
+			<item value="env.lastpos4"/>
+		</list>
+		<list key="replacehistory">
+			<item value="time.sleep(0.5)"/>
+			<item value="time.sleep(2)"/>
+			<item value="env.writeText2SerialPort(context, text2)"/>
+			<item value="env.writeText2SerialPort(context, text)"/>
+			<item value="env.writeText2SerialPort(context, text, 1)"/>
+			<item value="env.writeText2SerialPort(context, text, 0.5)"/>
+			<item value="env.lastpos"/>
+			<item value="env.lastpos4"/>
+			<item value="env.lastpos3"/>
+			<item value="env.lastpos2"/>
+			<item value="env.lastpos1"/>
+			<item value="lastpos"/>
+			<item value=""/>
+			<item value="abs((target_angles[3] - context.lastpos4)"/>
+			<item value="abs(target_angles[2]- context.lastpos3)"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="83"/>
+		<item key="DIALOG_Y_ORIGIN" value="475"/>
+		<item key="DIALOG_WIDTH" value="511"/>
+		<item key="DIALOG_HEIGHT" value="523"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-18|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>
