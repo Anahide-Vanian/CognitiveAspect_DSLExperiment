@@ -1,0 +1,12 @@
+model sample
+
+declarative entity robot {
+     actions: moves, grabs
+     properties: position
+}
+
+declarative entity object {
+     states: sensed, released
+     properties: color
+}
+
