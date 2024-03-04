@@ -1,0 +1,375 @@
+
+
+model sample
+
+//declarative entities
+declarative entity robot {
+	actions: moves
+	properties: position, speed
+}
+
+declarative entity object {
+	states: red, green, blue, sensed, sorted, assembled
+	properties: color	
+}
+
+declarative entity sensor {
+	actions: scans	
+}
+
+declarative entity magnet {
+	actions: activates, deactivates 
+	states: ON,OFF
+}
+
+
+
+
+
+////////////////TASK 1 : Hold the object above the sensor to detect its color
+//Scenario for Object_1 
+Scenario: Moving Object1 to detect its color
+Given the position of the robot "SuperRobot" is "default" 
+And the magnet "Magnet" is OFF
+
+When the magnet "Magnet" activates
+And the robot "Robot" moves to position "POS_1"  
+And the robot "Robot" moves to position "SENSOR_AREA" 
+And the sensor "Sensor" scans 
+And the robot "Robot" moves to position "default"//The robot has the object sticked in its TCP here
+
+Then the object "Cube" is sensed
+
+
+//Scenario for Object_2
+Scenario: Moving Object1 to detect its color
+Given the position of the robot "SuperRobot" is "default" 
+And the magnet "Magnet" is OFF
+
+When the magnet "Magnet" activates
+And the robot "Robot" moves to position "POS_2"  
+And the robot "Robot" moves to position "SENSOR_AREA" 
+And the sensor "Sensor" scans 
+And the robot "Robot" moves to position "default"//The robot has the object sticked in its TCP here
+
+Then the object "Cube" is sensed
+
+
+//Scenario for Object_3
+Scenario: Moving Object1 to detect its color
+Given the position of the robot "SuperRobot" is "default" 
+And the magnet "Magnet" is OFF
+
+When the magnet "Magnet" activates
+And the robot "Robot" moves to position "POS_3"  
+And the robot "Robot" moves to position "SENSOR_AREA" 
+And the sensor "Sensor" scans
+And the robot "Robot" moves to position "default"//The robot has the object sticked in its TCP here
+
+Then the object "Cube" is sensed
+
+////////////////TASK 2 : Place the objects into the correct buckets
+//Scenario for "RED_BUCKET" and "GREEN_BUCKET"  
+Scenario: Sorting object in its corresponding colored bucket
+Given the position of the robot "SuperRobot" is "default" 
+And the magnet "Magnet" is ON//The robot has the object sticked in its TCP here
+And the object "Cube" is green 
+
+When the robot "Robot" moves to position "GREEN_BUCKET"  
+And the magnet "Magnet" deactivates
+And the robot "Robot" moves to position "default"
+
+Then the object "Cube" is sorted
+
+//Scenario for "RED_BUCKET"
+ 
+
+//Scenario for "RED_BUCKET" and "BLUE_BUCKET"  
+
+//TASK 3 :Building the tour in a specific order : Here 3 scenarios for the Red -> Blue -> Green order
+Scenario: Assembling the RED object 
+Given the position of the robot "SuperRobot" is "default" 
+And the magnet "Magnet" is OFF
+When the robot "Robot" moves to position "RED_BUCKET"
+And the magnet "Magnet" activates 
+And the robot "Robot" moves to position "ASSEMBLING_AREA_1"  
+And the magnet "Magnet" deactivates
+And the robot "Robot" moves to position "default"
+Then the object "RedCube" is assembled
+
+Scenario: Assembling the GREEN object 
+Given the position of the robot "SuperRobot" is "default" 
+And the magnet "Magnet" is OFF
+When the robot "Robot" moves to position "GREEN_BUCKET"
+And the magnet "Magnet" activates 
+And the robot "Robot" moves to position "ASSEMBLING_AREA_2"  
+And the magnet "Magnet" deactivates
+And the robot "Robot" moves to position "default"
+Then the object "GreenCube" is assembled
+
+
+Scenario: Assembling the BLUE object 
+Given the position of the robot "SuperRobot" is "default" 
+And the magnet "Magnet" is OFF
+When the robot "Robot" moves to position "BLUE_BUCKET"
+And the magnet "Magnet" activates 
+And the robot "Robot" moves to position "ASSEMBLING_AREA_3"  
+And the magnet "Magnet" deactivates
+And the robot "Robot" moves to position "default"
+Then the object "BlueCube" is assembled
+
+
+
+
+/*
+
+
+
+
+model sample
+
+declarative entity robot {
+     actions: moves, grabs
+     properties: position
+}
+
+declarative entity object {
+     states: sensed, released, grabbed
+     properties: color
+}
+
+//TASK 1: Sorting the objects
+
+//OBJ1
+
+Scenario: Grabbing the object 
+Given the position of the robot "Robot" is "default"
+When the robot "Robot" moves to position "POS1"
+And the robot "Robot" grabs the object "Cube"
+Then the object "Cube" is grabbed
+
+Scenario: Moving the object 
+Given the object "Cube" is grabbed
+When the robot "Robot" moves to position "SENSOR_AREA"
+Then the object "Cube" is sensed
+
+Scenario: Sorting the object its corresponding bucket
+Given the object "Cube" is sensed
+And the color of the object "Cube" is "red"
+When the robot "Robot" moves to position "RED_BUCKET"
+Then the object "Cube" is released
+
+Scenario: Sorting the object to its corresponding bucket
+Given the object "Cube" is sensed
+And the color of the object "Cube" is "green"
+When the robot "Robot" moves to position "GREEN_BUCKET"
+Then the object "Cube" is released
+
+Scenario: Sorting the object to its corresponding bucket
+Given the object "Cube" is sensed
+And the color of the object "Cube" is "blue"
+When the robot "Robot" moves to position "BLUE_BUCKET"
+Then the object "Cube" is released
+
+//OBJ2
+
+Scenario: Grabbing the object
+Given the position of the robot "Robot" is "default"
+When the robot "Robot" moves to position "POS2"
+And the robot "Robot" grabs the object "Cube"
+Then the object "Cube" is grabbed
+
+Scenario: Moving the object to detect its color
+Given the object "Cube" is grabbed
+When the robot "Robot" moves to position "SENSOR_AREA"
+Then the object "Cube" is sensed
+
+Scenario: Sorting the object to its corresponding bucket
+Given the object "Cube" is sensed
+And the color of the object "Cube" is "red"
+When the robot "Robot" moves to position "RED_BUCKET"
+Then the object "Cube" is released
+
+Scenario: Sorting the object to its corresponding bucket
+Given the object "Cube" is sensed
+And the color of the object "Cube" is "green"
+When the robot "Robot" moves to position "GREEN_BUCKET"
+Then the object "Cube" is released
+
+Scenario: Sorting the object to its corresponding bucket
+Given the object "Cube" is sensed
+And the color of the object "Cube" is "blue"
+When the robot "Robot" moves to position "BLUE_BUCKET"
+Then the object "Cube" is released
+
+//OBJ3
+
+Scenario: Grabbing the object
+Given the position of the robot "Robot" is "default"
+When the robot "Robot" moves to position "POS3"
+And the robot "Robot" grabs the object "Cube"
+Then the object "Cube" is grabbed
+
+Scenario: Moving the object to detect its color
+Given the object "Cube" is grabbed
+When the robot "Robot" moves to position "SENSOR_AREA"
+Then the object "Cube" is sensed
+
+Scenario: Sorting the object to its corresponding bucket
+Given the object "Cube" is sensed
+And the color of the object "Cube" is "red"
+When the robot "Robot" moves to position "RED_BUCKET"
+Then the object "Cube" is released
+
+Scenario: Sorting the object to its corresponding bucket
+Given the object "Cube" is sensed
+And the color of the object "Cube" is "green"
+When the robot "Robot" moves to position "GREEN_BUCKET"
+Then the object "Cube" is released
+
+Scenario: Sorting the object to its corresponding bucket
+Given the object "Cube" is sensed
+And the color of the object "Cube" is "blue"
+When the robot "Robot" moves to position "BLUE_BUCKET"
+Then the object "Cube" is released
+
+//TASK 2: Stacking the objects (red, blue, green order)
+
+//RED
+
+Scenario: Grabbing the object
+Given the position of the robot "Robot" is "default"
+When the robot "Robot" moves to position "RED_BUCKET"
+And the robot "Robot" grabs the object "Cube"
+Then the object "Cube" is grabbed
+
+Scenario: Stacking the RED object
+Given the object "Cube" is grabbed
+When the robot "Robot" moves to position "ASSEMBLING_AREA"
+Then the object "Cube" is released
+
+//BLUE
+
+Scenario: Grabbing the object
+Given the position of the robot "Robot" is "default"
+When the robot "Robot" moves to position "BLUE_BUCKET"
+And the robot "Robot" grabs the object "Cube"
+Then the object "Cube" is grabbed
+
+Scenario: Stacking the BLUE object
+Given the object "Cube" is grabbed
+When the robot "Robot" moves to position "ASSEMBLING_AREA"
+Then the object "Cube" is released
+
+//GREEN
+
+Scenario: Grabbing the object
+Given the position of the robot "Robot" is "default"
+When the robot "Robot" moves to position "GREEN_BUCKET"
+And the robot "Robot" grabs the object "Cube"
+Then the object "Cube" is grabbed
+
+Scenario: Stacking the GREEN object
+Given the object "Cube" is grabbed
+When the robot "Robot" moves to position "ASSEMBLING_AREA"
+Then the object "Cube" is released
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////////////////
+
+
+
+
+
+/* 
+//declarative entities
+declarative entity robot {
+	actions: moves
+	states: ready, notReady
+	properties: position, speed
+}
+
+declarative entity object {
+	states: red, green, blue, present, pickedAndplaced
+	properties: color	
+}
+
+declarative entity sensor {
+	actions: scans	
+}
+
+declarative entity magnet {
+	actions: activates, deactivates 
+	states: ON,OFF
+}
+
+
+
+//imperative entities
+imperative entity robot {
+	actions: moves
+	states: ready, notReady
+	properties: position, speed
+}
+
+imperative entity object {
+	states: red, green, blue, present, pickedAndplaced
+	properties: color	
+	
+}
+
+imperative entity button {
+	actions: scans	
+	properties: signal
+}
+
+
+imperative entity sensor {
+	actions: detects
+}
+
+imperative entity magnet {
+	actions: activates, deactivates 
+	states: ON,OFF
+}
+
+//And the robot "SuperRobot" is ready
+Scenario: Green object
+Given the color of the object "MysteriousSquare" is "green"
+And the position of the robot "SuperRobot" is "default"
+which means
+        Given the object "MysteriousSquare" is present       
+        When the sensor "ColorSensor" detects 
+        Then the object "MysteriousSquare" is green 
+When the robot "SuperRobot" moves to position "above_zone_A"
+which means
+        Given the magnet "Magnet" is OFF
+        And the signal of the button "ready" is "ON"
+        And the position of the robot "SuperRobot" is "default"
+        When the robot "SuperRobot" moves to position "above_zone_A" 
+        Then the position of the robot "SuperRobot" is "above_zone_A"
+Then the object "MysteriousSquare" is pickedAndplaced
+ which means 
+		Given the magnet "Magnet" is OFF
+		And the position of the robot "SuperRobot" is "above_zone_A"
+		When the robot "SuperRobot" moves to position "zone_A"
+		And the magnet "Magnet" activates
+		And the robot "SuperRobot" moves to position "zone_B" 
+		Then the magnet "Magnet" is OFF
+
+*/

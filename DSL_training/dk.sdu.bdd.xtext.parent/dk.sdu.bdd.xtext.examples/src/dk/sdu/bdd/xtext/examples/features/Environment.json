@@ -1,0 +1,28 @@
+{
+    "Robot": {
+        "step_size" : 10
+    },
+    
+    "Speeds": {
+        "very slow": 0,
+        "slow": 3,
+        "moderate": 5,
+        "fast": 7,
+        "very fast": 10
+    },
+    "Positions" : {
+    	"START" : [0, 0],
+    	"OBJECT_POSITION" : [100, 0]
+    
+    }
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,32 @@
+model sample
+
+declarative entity character {	
+    actions: moves
+    properties: position, speed
+}
+
+declarative entity object {
+     states: activated, unactivated 
+     properties: color
+}
+
+
+
+Scenario: "Activating the object" 
+Given the position of the character "Bob" is "START"
+When the character "Bob" moves to position "OBJECT_POSITION"
+Then the object "Circle 1" is activated
+
+
+
+
+
+
+
+
+
+
+
+
+
+

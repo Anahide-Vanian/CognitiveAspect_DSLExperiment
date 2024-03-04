@@ -1,0 +1,93 @@
+2024-02-16 10:20:46,799 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-16 10:21:38,490 [Worker-7: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\pom.xml.
+2024-02-16 10:21:43,426 [Worker-31: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:21:43,426 [Worker-31: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
+2024-02-16 10:21:43,431 [Worker-31: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:21:43,431 [Worker-31: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
+2024-02-16 10:21:50,759 [Worker-31: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:21:50,761 [Worker-31: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
+2024-02-16 10:21:50,763 [Worker-31: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:21:50,764 [Worker-31: Launching GenerateBddDsl.mwe2] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
+2024-02-16 10:22:11,151 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:11,152 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\main\resources
+2024-02-16 10:22:11,156 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:11,156 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\src\test\resources
+2024-02-16 10:22:12,669 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ide:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\pom.xml.
+2024-02-16 10:22:13,295 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:13,296 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
+2024-02-16 10:22:13,297 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:13,297 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
+2024-02-16 10:22:14,627 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:14,628 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\main\resources
+2024-02-16 10:22:14,631 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:14,631 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ide\src\test\resources
+2024-02-16 10:22:15,020 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.tests:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\pom.xml.
+2024-02-16 10:22:15,033 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:15,034 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
+2024-02-16 10:22:15,037 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:15,038 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
+2024-02-16 10:22:15,908 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:15,908 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\main\resources
+2024-02-16 10:22:15,911 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:15,911 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.tests\src\test\resources
+2024-02-16 10:22:16,056 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ui:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\pom.xml.
+2024-02-16 10:22:16,068 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:16,068 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
+2024-02-16 10:22:16,070 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:16,071 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
+2024-02-16 10:22:18,890 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:18,891 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\main\resources
+2024-02-16 10:22:18,894 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:18,894 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui\src\test\resources
+2024-02-16 10:22:19,130 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext.ui.tests:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\pom.xml.
+2024-02-16 10:22:19,144 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:19,144 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\main\resources
+2024-02-16 10:22:19,146 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-02-16 10:22:19,147 [Worker-17: Launching Launch Runtime Eclipse] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext.ui.tests\src\test\resources
+2024-02-16 11:48:22,516 [Start Help Server] INFO  org.eclipse.jetty.server.Server - jetty-10.0.15; built: 2023-04-11T17:25:14.480Z; git: 68017dbd00236bb7e187330d7585a059610f661d; jvm 17.0.9+9
+2024-02-16 11:48:22,580 [Start Help Server] INFO  o.e.j.s.s.DefaultSessionIdManager - Session workerName=node0
+2024-02-16 11:48:22,629 [Start Help Server] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@6fa5209d{/help,null,AVAILABLE}
+2024-02-16 11:48:22,668 [Start Help Server] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@50d01d4d{HTTP/1.1, (http/1.1)}{127.0.0.1:62584}
+2024-02-16 11:48:22,675 [Start Help Server] INFO  org.eclipse.jetty.server.Server - Started Server@705b1b07{STARTING}[10.0.15,sto=0] @5265903ms
+2024-02-16 14:48:27,089 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-17 08:51:01,709 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-17 18:27:46,042 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-27 11:10:21,484 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-02-27 12:52:11,568 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-27 14:01:42,274 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-27 14:02:45,370 [Worker-29: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\projectRobotColorsSorting_V2\DSL\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\pom.xml.
+2024-02-28 08:31:00,106 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-28 08:42:08,612 [Worker-8: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-02-28 08:43:02,699 [Worker-38: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\DSL_Training\DSL_training\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\pom.xml.
+2024-02-29 09:49:00,036 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-03-04 09:34:30,768 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-04 09:35:55,341 [Worker-30: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using DEFAULT lifecycle mapping for MavenProject: dk.sdu.bdd.xtext:dk.sdu.bdd.xtext:1.0.0-SNAPSHOT @ C:\Users\ansil\eclipse-workspace\DSL_Training\DSL_training\dk.sdu.bdd.xtext.parent\dk.sdu.bdd.xtext\pom.xml.
+2024-03-04 10:39:59,035 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-03-04 11:03:18,323 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Canceler(SDU-134054-c-sdu-dk.local.).run() exception 
+java.net.NoRouteToHostException: No route to host: no further information
+	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
+	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
+	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+2024-03-04 11:03:23,335 [Multihomed mDNS.Timer] WARN  j.j.i.DNSStatefulObject$DefaultImplementation - Wait for canceled timed out: DNS: SDU-134054-c-sdu-dk.local. [SDU-134054.c.sdu.dk/172.17.240.1] state: canceling 1 task: null
+2024-03-04 11:03:24,345 [JmDNS(SDU-134054-c-sdu-dk.local.).State.Timer] WARN  j.j.impl.tasks.state.DNSStateTask - Canceler(SDU-134054-c-sdu-dk.local.).run() exception 
+java.net.NoRouteToHostException: No route to host: no further information
+	at java.base/sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+	at java.base/sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:901)
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:863)
+	at java.base/sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:821)
+	at java.base/sun.nio.ch.DatagramChannelImpl.blockingSend(DatagramChannelImpl.java:853)
+	at java.base/sun.nio.ch.DatagramSocketAdaptor.send(DatagramSocketAdaptor.java:218)
+	at java.base/java.net.DatagramSocket.send(DatagramSocket.java:664)
+	at javax.jmdns.impl.JmDNSImpl.send(JmDNSImpl.java:1665)
+	at javax.jmdns.impl.tasks.state.DNSStateTask.run(DNSStateTask.java:131)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:566)
+	at java.base/java.util.TimerThread.run(Timer.java:516)
+2024-03-04 11:03:29,358 [Multihomed mDNS.Timer] WARN  j.j.i.DNSStatefulObject$DefaultImplementation - Wait for canceled timed out: DNS: SDU-134054-c-sdu-dk.local. [SDU-134054.c.sdu.dk/fe80:0:0:0:6c3d:6e9e:e576:f100%eth20] state: canceling 1 task: null
